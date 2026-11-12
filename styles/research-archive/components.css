@@ -30,6 +30,7 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   border-top: var(--ra-border-strong);
   border-bottom: var(--ra-border-strong);
+  background: var(--ra-wash);
 }
 
 .ra-record-cell {

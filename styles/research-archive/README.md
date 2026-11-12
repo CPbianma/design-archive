@@ -2,7 +2,7 @@
 
 **English · [中文说明](README.zh-CN.md)**
 
-Version 1.0.0
+Version 1.1.0
 
 A warm, precise visual direction for research portfolios, software indexes, project documentation, and technical personal sites. It combines the visual conventions of a research record—fields, dates, indexes, and tabular metadata—with a restrained software palette.
 
@@ -21,7 +21,8 @@ The style is intentionally not a glassmorphic AI dashboard, a beige lifestyle ed
 | Role | Light | Dark | Use |
 | --- | --- | --- | --- |
 | Page | `#E8E7E1` | `#151712` | Canvas outside the primary surface |
-| Paper | `#F7F6F0` | `#20231C` | Main reading surface |
+| Paper | `#FFFFFF` | `#20231C` | Main reading surface; blends into GitHub's native light canvas |
+| Wash | `#F7F6F0` | `#20231C` | Warm information bands and selected record groups |
 | Ink | `#292C26` | `#E9E9DF` | Headings and primary text |
 | Muted | `#5F6459` | `#B4B7AA` | Descriptions and secondary values |
 | Faint | `#6A6F64` | `#A2A797` | Small labels and metadata |
@@ -29,7 +30,7 @@ The style is intentionally not a glassmorphic AI dashboard, a beige lifestyle ed
 | Strong line | `#A7AA9C` | `#646B58` | Outer frame and major divisions |
 | Accent | `#A94F36` | `#D98565` | One data point, index, arrow, or focus state |
 
-Core text and accent combinations against Paper start at 4.76:1 in the light theme and 5.68:1 in the dark theme. Recheck contrast when changing a value.
+Core text and accent combinations against Paper and Wash start at 4.76:1 in the light theme and 5.68:1 in the dark theme. Recheck contrast when changing a value.
 
 ## Typography
 
@@ -64,9 +65,9 @@ Use the values in `tokens.json` as SVG custom properties. A self-contained asset
 
 ```xml
 <style>
-  svg { --paper: #F7F6F0; --ink: #292C26; }
+  svg { --paper: #FFFFFF; --wash: #F7F6F0; --ink: #292C26; }
   @media (prefers-color-scheme: dark) {
-    svg { --paper: #20231C; --ink: #E9E9DF; }
+    svg { --paper: #20231C; --wash: #20231C; --ink: #E9E9DF; }
   }
 </style>
 ```

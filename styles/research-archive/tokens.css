@@ -1,9 +1,10 @@
-/* Research Archive · v1.0.0
+/* Research Archive · v1.1.0
    Color roles and type decisions for warm, technical editorial interfaces. */
 :root {
   color-scheme: light;
   --ra-page: #e8e7e1;
-  --ra-paper: #f7f6f0;
+  --ra-paper: #ffffff;
+  --ra-wash: #f7f6f0;
   --ra-ink: #292c26;
   --ra-muted: #5f6459;
   --ra-faint: #6a6f64;
@@ -47,6 +48,8 @@
     color-scheme: dark;
     --ra-page: #151712;
     --ra-paper: #20231c;
+  --ra-wash: #20231c;
+    --ra-wash: #20231c;
     --ra-ink: #e9e9df;
     --ra-muted: #b4b7aa;
     --ra-faint: #a2a797;
@@ -62,6 +65,7 @@
   color-scheme: dark;
   --ra-page: #151712;
   --ra-paper: #20231c;
+  --ra-wash: #20231c;
   --ra-ink: #e9e9df;
   --ra-muted: #b4b7aa;
   --ra-faint: #a2a797;
