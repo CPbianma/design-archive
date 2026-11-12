@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "styles": [
+    {
+      "slug": "research-archive",
+      "name": "Research Archive",
+      "version": "1.0.0",
+      "path": "styles/research-archive/",
+      "preview": "styles/research-archive/preview.html",
+      "tags": ["warm-neutral", "technical", "editorial", "portfolio", "light-dark"]
+    }
+  ]
+}

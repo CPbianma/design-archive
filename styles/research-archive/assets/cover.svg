@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Research Archive design direction</title>
+  <desc id="desc">Warm neutral typography, technical records, and a restrained terracotta accent. Light and dark palette swatches appear along the bottom.</desc>
+  <style>
+    svg { --paper: #F7F6F0; --ink: #292C26; --muted: #5F6459; --line: #A7AA9C; --accent: #A94F36; }
+    @media (prefers-color-scheme: dark) { svg { --paper: #20231C; --ink: #E9E9DF; --muted: #B4B7AA; --line: #646B58; --accent: #D98565; } }
+    .display { font-family: Archivo, sans-serif; font-weight: 500; letter-spacing: -4px; }
+    .mono { font-family: "IBM Plex Mono", monospace; letter-spacing: 2px; }
+    .body { font-family: "IBM Plex Sans", sans-serif; }
+  </style>
+  <rect x="1" y="1" width="1198" height="628" fill="var(--paper)" stroke="var(--line)"/>
+  <path d="M56 60H1144" stroke="var(--line)"/>
+  <text x="56" y="43" class="mono" font-size="13" fill="var(--muted)">DESIGN ARCHIVE / DIRECTION 001</text>
+  <text x="1144" y="43" class="mono" font-size="13" fill="var(--muted)" text-anchor="end">LIGHT + DARK / CSS + JSON</text>
+  <text x="56" y="212" class="display" font-size="104" fill="var(--ink)">Research</text>
+  <text x="56" y="310" class="display" font-size="104" fill="var(--ink)">Archive<tspan fill="var(--accent)">.</tspan></text>
+  <text x="60" y="364" class="body" font-size="24" fill="var(--muted)">Warm neutrals for technical work.</text>
+  <g transform="translate(868 130)" fill="none" stroke="var(--ink)" stroke-width="7" stroke-linecap="square">
+    <path d="M157 42L133 21H77L40 58V149L77 186H133L157 165"/>
+    <path d="M81 146V62H122L151 84V112L122 135H81"/>
+    <rect x="162" y="9" width="16" height="16" fill="var(--accent)" stroke="none"/>
+  </g>
+  <path d="M56 423H1144" stroke="var(--line)"/>
+  <text x="56" y="461" class="mono" font-size="12" fill="var(--muted)">PAPER / INK / LINE / ACCENT</text>
+  <g transform="translate(56 491)">
+    <rect width="198" height="74" fill="#F7F6F0" stroke="#D2D2C6"/>
+    <rect x="221" width="198" height="74" fill="#292C26"/>
+    <rect x="442" width="198" height="74" fill="#5F6459"/>
+    <rect x="663" width="198" height="74" fill="#A7AA9C"/>
+    <rect x="884" width="204" height="74" fill="#A94F36"/>
+  </g>
+  <text x="56" y="598" class="mono" font-size="11" fill="var(--muted)">ARCHIVO / IBM PLEX SANS / IBM PLEX MONO</text>
+  <text x="1144" y="598" class="mono" font-size="11" fill="var(--muted)" text-anchor="end">V1.0.0</text>
+</svg>

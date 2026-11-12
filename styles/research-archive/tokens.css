@@ -1,0 +1,73 @@
+/* Research Archive · v1.0.0
+   Color roles and type decisions for warm, technical editorial interfaces. */
+:root {
+  color-scheme: light;
+  --ra-page: #e8e7e1;
+  --ra-paper: #f7f6f0;
+  --ra-ink: #292c26;
+  --ra-muted: #5f6459;
+  --ra-faint: #6a6f64;
+  --ra-line: #d2d2c6;
+  --ra-line-strong: #a7aa9c;
+  --ra-accent: #a94f36;
+  --ra-control: #deded4;
+  --ra-focus: #a94f36;
+
+  --ra-font-display: "Archivo", "Noto Sans SC", sans-serif;
+  --ra-font-body: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+  --ra-font-mono: "IBM Plex Mono", "Noto Sans SC", monospace;
+
+  --ra-text-xs: 0.625rem;
+  --ra-text-sm: 0.75rem;
+  --ra-text-md: 0.875rem;
+  --ra-text-lg: 1.125rem;
+  --ra-text-xl: 1.5rem;
+  --ra-text-display: clamp(2.5rem, 7vw, 3.5rem);
+
+  --ra-space-1: 0.25rem;
+  --ra-space-2: 0.5rem;
+  --ra-space-3: 0.75rem;
+  --ra-space-4: 1rem;
+  --ra-space-5: 1.5rem;
+  --ra-space-6: 2rem;
+  --ra-space-7: 3rem;
+  --ra-space-8: 4rem;
+
+  --ra-radius: 0;
+  --ra-border: 1px solid var(--ra-line);
+  --ra-border-strong: 1px solid var(--ra-line-strong);
+  --ra-content: 60rem;
+  --ra-reading: 65ch;
+  --ra-ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --ra-duration: 220ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ra-page: #151712;
+    --ra-paper: #20231c;
+    --ra-ink: #e9e9df;
+    --ra-muted: #b4b7aa;
+    --ra-faint: #a2a797;
+    --ra-line: #3c4135;
+    --ra-line-strong: #646b58;
+    --ra-accent: #d98565;
+    --ra-control: #30352a;
+    --ra-focus: #d98565;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ra-page: #151712;
+  --ra-paper: #20231c;
+  --ra-ink: #e9e9df;
+  --ra-muted: #b4b7aa;
+  --ra-faint: #a2a797;
+  --ra-line: #3c4135;
+  --ra-line-strong: #646b58;
+  --ra-accent: #d98565;
+  --ra-control: #30352a;
+  --ra-focus: #d98565;
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles/research-archive/tokens.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 32px max(16px, 4vw) 64px; background: var(--ra-page); color: var(--ra-ink); font-family: var(--ra-font-body); }
+    main { width: min(100%, 1040px); margin-inline: auto; }
+    header { display: flex; align-items: end; justify-content: space-between; gap: 32px; padding-bottom: 28px; border-bottom: var(--ra-border-strong); }
+    h1 { margin: 8px 0 0; font-family: var(--ra-font-display); font-size: clamp(36px, 7vw, 64px); font-weight: 500; letter-spacing: -.055em; line-height: 1; }
+    p { max-width: 65ch; }
+    .intro { margin: 0; color: var(--ra-muted); line-height: 1.7; }
+    .catalog { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(240px, .6fr); gap: 40px; padding-top: 36px; }
+    .cover { display: block; width: 100%; height: auto; border: var(--ra-border-strong); }
+    .details { display: grid; align-content: start; gap: 22px; }
+    h2 { margin: 0; font-family: var(--ra-font-display); font-size: 26px; font-weight: 500; letter-spacing: -.03em; }
+    dl { display: grid; gap: 14px; margin: 0; }
+    dt { color: var(--ra-faint); font-family: var(--ra-font-mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+    dd { margin: 3px 0 0; color: var(--ra-muted); font-size: 14px; }
+    a { color: var(--ra-ink); text-decoration-color: var(--ra-accent); text-underline-offset: 4px; }
+    a:focus-visible { outline: 2px solid var(--ra-focus); outline-offset: 4px; }
+    .open { display: inline-block; margin-top: 8px; font-family: var(--ra-font-mono); font-size: 12px; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: var(--ra-border); color: var(--ra-faint); font-family: var(--ra-font-mono); font-size: 10px; letter-spacing: .08em; }
+    @media (max-width: 720px) { header { align-items: start; flex-direction: column; } .catalog { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div><p class="ra-label">A growing library of visual directions</p><h1>Design Archive.</h1></div>
+      <p class="intro">Reusable palettes, typography, components, and documentation. Each direction is independent and framework-free.</p>
+    </header>
+    <section class="catalog" aria-labelledby="style-name">
+      <a href="styles/research-archive/preview.html"><img class="cover" src="styles/research-archive/assets/cover.svg" alt="Research Archive style cover"></a>
+      <div class="details">
+        <p class="ra-label">Direction 001 / Version 1.0.0</p>
+        <h2 id="style-name">Research Archive</h2>
+        <p class="intro">Warm neutrals, precise rules, technical metadata, and editorial spacing for research and engineering work.</p>
+        <dl>
+          <div><dt>Tokens</dt><dd>CSS custom properties + JSON</dd></div>
+          <div><dt>Themes</dt><dd>System, light, and dark</dd></div>
+          <div><dt>Type</dt><dd>Archivo / IBM Plex Sans / IBM Plex Mono</dd></div>
+          <div><dt>Best for</dt><dd>Portfolios, project indexes, documentation</dd></div>
+        </dl>
+        <a class="open" href="styles/research-archive/preview.html">Open style guide ↗</a>
+      </div>
+    </section>
+    <footer>CPBIANMA / DESIGN ARCHIVE / MIT</footer>
+  </main>
+</body>
+</html>
